@@ -2,7 +2,7 @@
 
 html,
 body {
-  font-size: 18px
+  font-size: 16px
 }
 
 .image-container {
@@ -28,13 +28,22 @@ header {
 header .content {
   display: flex;
   align-items: center;
-  padding: 1.875rem;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+header .content .logo {
+  display: flex;
 }
 
 header nav ul {
   display: flex;
+
 }
 
+nav li {
+  padding-left: 1rem;
+}
 header .mobile {
   display: none;
 }
