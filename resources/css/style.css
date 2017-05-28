@@ -90,6 +90,14 @@ header .mobile {
   header .mobile li {
     padding: 0;
   }
+
+
+}
+
+@media only screen and (max-width: 530px){
+  header .content .logo {
+    display: none;
+  }
 }
 
 
@@ -137,6 +145,14 @@ main .banner{
   padding: .5rem ;
 }
 
+@media only screen and (max-width: 760px) {
+  .banner .image-container {
+    display: none;
+  }
+  .banner .content {
+    width: 100%;
+  }
+}
 
 /* Information */
 
@@ -213,4 +229,41 @@ main .banner{
 .guest {
   background-color: lightgrey;
 
+}
+
+.details .moblie {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  body {
+    font-size: 16px;
+  }
+  .info .quote {
+    display: none;
+  }
+  .info .details .desktop {
+    display: none;
+  }
+  .details .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .smallflex {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .smallflex .image-container {
+    padding: 1rem;
+    align-self: center;
+    width: 100%;
+  }
+
+  .smallflex .content {
+    padding: 1rem 2rem;
+
+  }
 }
