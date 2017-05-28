@@ -13,6 +13,10 @@ body {
   display: block;
 }
 
+.main-content {
+  position: relative;
+  top: 4rem; /* To offset for fixed header. */
+}
 
 
 /* Header */
@@ -21,19 +25,26 @@ header {
   position: fixed;
   width: 100%;
   background-color: white;
-  z-index: 100;
-  line-height: 1.6;
+  z-index: 1;
+  height: 4rem;
 }
 
 header .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding-top: .5rem;
 }
 
 header .content .logo {
   display: flex;
+  font-size: 1rem;
+  align-items: center;
+}
+
+.content .logo img {
+  height: 3rem;
+  padding-left: 1.5rem;
 }
 
 header nav ul {
@@ -72,4 +83,25 @@ header .mobile {
   header .mobile li {
     padding: 0;
   }
+}
+
+
+/* Banner */
+
+main .banner{
+  display: flex;
+  flex-flow: row;
+  background-color: lightgrey;
+  border: solid .25rem black;
+  padding: 2rem 1.5rem
+}
+
+.banner .image-container {
+  width: 60%;
+
+}
+
+.banner .content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
