@@ -2,7 +2,8 @@
 
 html,
 body {
-  font-size: 16px
+  font-size: 16px;
+  color: #222222;
 }
 
 .image-container {
@@ -98,45 +99,41 @@ main .banner{
   justify-content: center;
   align-items: center;
   background-color: lightgrey;
-  border: solid .25rem black;
   padding: 2rem 1.5rem
 }
 
 .banner .image-container {
   max-width: 60%;
-  padding-right: 2.5rem;
-
+  margin-right: 2.5rem;
 }
 
+.banner img {
+  max-width: 100%;
+}
 .banner .content {
   display: flex;
   flex-flow: column;
-  margin: 2rem;
-  padding-left: .5rem;
-  height: 51rem;
-  line-height: 1.25;
+  line-height: 1;
   justify-content: center;
-  color: black;
-  border: solid 1px black;
+  color: #222222;
 }
 
 .banner .content h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .banner .content p {
   font-size: 1.5rem;
-  padding: .5rem;
+  padding-bottom: 1.5rem;
 }
 
 .banner .content a {
-  background-color: black;
+  background-color: #222222;
   color: white;
   text-align: center;
   padding: .5rem ;
-  width: 80%;
 }
 
 
@@ -144,12 +141,11 @@ main .banner{
 
 .flex-container .info {
   width: 100%;
-  border: solid 2px grey;
+  border: solid .2px grey;
 }
 
 .flex-container .quote {
   flex-flow: column;
-  border: solid 2px grey;
 }
 
 .quote .image-container img {
@@ -166,20 +162,54 @@ main .banner{
   padding-bottom: 1.5rem;
 }
 
+.quote h5 {
+  padding-top: 3rem;
+}
+
 .quote .image-container {
   padding: 2rem 1.5rem;
 
 }
 
 .flex-container .details {
-    border: solid 2px grey;
     flex-flow: column;
-    width: 35%;
   }
 
 .smallflex {
   display: flex;
-  width: 100%;
-  border: solid 2px grey;
+  width: 27rem;
+  border: solid .2px lightgrey;
+  align-items: center;
   padding: 1rem;
+}
+
+.smallflex .image-container {
+  width: 35%;
+  min-width: 10rem;
+}
+
+.smallflex img {
+  width: 100%;
+}
+.smallflex .content {
+  padding-left: 1.5rem;
+  line-height: 1.3;
+}
+.smallflex h4{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.smallflex p {
+  padding: .5rem 0;
+  font-size: 1rem;
+}
+
+.smallflex a {
+  color: blue;
+  font-size: 1rem;
+}
+.guest {
+  background-color: lightgrey;
+
 }
