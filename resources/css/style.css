@@ -24,7 +24,11 @@ body {
   top: 4rem; /* To offset for fixed header. */
 }
 
-
+@media only screen and (max-width: 760px) {
+  body {
+    font-size: 16px;
+  }
+}
 /* Header */
 
 header {
@@ -151,14 +155,16 @@ main .banner{
   }
   .banner .content {
     width: 100%;
+
   }
 }
 
 /* Information */
 
-.flex-container .info {
+.info {
   width: 100%;
   border: solid .2px grey;
+  justify-content: center;
 }
 
 .flex-container .quote {
@@ -228,38 +234,37 @@ main .banner{
 }
 .guest {
   background-color: lightgrey;
-
 }
 
-.details .moblie {
-  display: none;
-}
-
-@media only screen and (max-width: 760px) {
-  body {
-    font-size: 16px;
+@media only screen and (min-width: 761px) {
+  .details .mobile {
+    display: none;
   }
+}
+@media only screen and (max-width: 760px) {
+
   .info .quote {
     display: none;
   }
   .info .details .desktop {
     display: none;
   }
+
   .details .mobile {
     display: block;
-    width: 100%;
   }
 
   .smallflex {
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
+    border: none;
   }
 
   .smallflex .image-container {
     padding: 1rem;
     align-self: center;
-    width: 100%;
+    min-width: 100%;
   }
 
   .smallflex .content {
