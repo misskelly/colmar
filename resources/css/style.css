@@ -24,6 +24,7 @@ body {
   top: 4rem; /* To offset for fixed header. */
 }
 
+}
 @media only screen and (max-width: 760px) {
   body {
     font-size: 16px;
@@ -271,4 +272,44 @@ main .banner{
     padding: 1rem 2rem;
 
   }
+}
+/* Departments */
+.departments {
+  background-color: lightgrey;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 2rem;
+
+}
+
+.departments h2{
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.subject {
+  background-color: white;
+  width: 25%;
+  margin: .5rem;
+}
+
+.subject img {
+  width: 100%;
+}
+
+.subject .content {
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.subject h3 {
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
 }
