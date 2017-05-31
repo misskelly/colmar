@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>Colmar Academy</title>
     <link rel="stylesheet" href="./resources/css/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,700|Russo+One" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/style.css">
 
   </head>
@@ -15,7 +14,7 @@
         <div class="content">
           <div class="logo">
             <img src="./resources/images/ic-logo.svg" alt="lion logo">
-            <a href="index.html">COLMARACADEMY</a>
+            <a id="bold" href="index.html">COLMAR</a><a id="grey" href="index.html">ACADEMY</a>
           </div>
           <nav class="desktop">
             <ul>
@@ -59,7 +58,7 @@
               <img src="./resources/images/information-main.jpg" alt="man reading">
             </div>
             <div class="content">
-              <h2>It doesn't hurt to keep practicing</h2>
+              <h3>It doesn't hurt to keep practicing</h3>
               <p>"Saecula saeculorum latin blahbity blahh blah irepit calidus daemon. Quid quid amabile requiem aeternam"</p>
               <h5>Emanuel, Senior Strategist at Hiring.com</h5>
             </div>
@@ -227,7 +226,10 @@
 
             <div class="flex-container video">
               <div class="video-container">
-                <video src="https://vimeo.com/192408481" alt="could not play video">
+                <video autoplay>
+                  <source src="./resources/videos/thesis.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
               </div>
               <div class="content">
                 <h3>Reimagine Urban</h3>
@@ -291,6 +293,16 @@
 
       </div>
     </main>
-    <footer></footer>
+
+    <!-- Footer -->
+    <footer>
+      <div class="content">
+        <span class="copyright">© 2016 Colmar Academy, All Rights Reserved</span>
+        <nav>
+          <a id="t" href="#">Terms</a>
+          <a href="#">Privacy</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

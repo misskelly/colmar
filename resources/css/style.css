@@ -13,6 +13,9 @@ body {
 
 .image-container img {
   display: block;
+  border-radius: 5px;
+  border: 1px solid #d0a832;
+  box-shadow: 0px 0px 5px #333, inset 0px 0px 2px #d0a832;
 }
 
 .flex-container {
@@ -24,7 +27,17 @@ body {
   top: 4rem; /* To offset for fixed header. */
 }
 
+p {
+  color: #757575;
 }
+
+h1,
+h2 {
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: .15rem;
+  font-size: 3rem;
+}
+
 @media only screen and (max-width: 760px) {
   body {
     font-size: 16px;
@@ -58,6 +71,13 @@ header .content .logo {
   padding-left: 1.5rem;
 }
 
+#bold {
+  font-weight: bold;
+}
+
+#grey {
+  color:#757575;
+}
 header nav ul {
   display: flex;
   padding-right: 1.5rem;
@@ -112,17 +132,21 @@ main .banner{
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  background-color: lightgrey;
+  background-color: #d0a832;
   padding: 2rem 1.5rem
 }
 
 .banner .image-container {
   max-width: 60%;
   margin-right: 2.5rem;
+  border-radius: 5px;
+  border: 1px solid #d0a832;
+  box-shadow: 0px 0px 5px #333, inset 0px 0px 2px #d0a832;
 }
 
 .banner img {
   max-width: 100%;
+
 }
 .banner .content {
   display: flex;
@@ -141,6 +165,7 @@ main .banner{
 .banner .content p {
   font-size: 1.5rem;
   padding-bottom: 1.5rem;
+  color: #eceaea;
 }
 
 .banner .content a {
@@ -148,6 +173,9 @@ main .banner{
   color: white;
   text-align: center;
   padding: .5rem ;
+  border-radius: 5px;
+  border: 1px solid #d0a832;
+  box-shadow: 0px 0px 5px #333, inset 0px 0px 2px #d0a832;
 }
 
 @media only screen and (max-width: 760px) {
@@ -174,20 +202,22 @@ main .banner{
 
 .quote .image-container img {
   max-width: 100%;
+
 }
 
 .quote .content {
   padding-left: 1.5rem;
 
 }
-.quote .content h2{
+.quote .content h3{
   font-size: 2rem;
   font-weight: bold;
   padding-bottom: 1.5rem;
 }
 
 .quote h5 {
-  padding-top: 3rem;
+  padding: 3rem 0;
+  font-size: .75rem;
 }
 
 .quote .image-container {
@@ -234,7 +264,7 @@ main .banner{
   font-size: 1rem;
 }
 .guest {
-  background-color: lightgrey;
+  background-color: #e2d2a2;
 }
 
 @media only screen and (min-width: 761px) {
@@ -284,7 +314,6 @@ main .banner{
 }
 
 .departments h2{
-  font-size: 2rem;
   font-weight: bold;
   padding-top: 2rem;
   padding-bottom: 1rem;
@@ -321,10 +350,9 @@ main .banner{
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 .thesis h2{
-  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   flex: 1;
@@ -338,8 +366,48 @@ main .banner{
 .video {
   flex: 2;
   flex-flow: column;
+  padding: 0 1.5rem;
+}
+
+.video .content {
+  padding-right: 1.5rem;
 }
 .video-container {
   flex: 2;
-  border: solid 1px grey;
+  margin-right: 1rem;
+}
+
+.video h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1.5rem 0;
+}
+
+.video p {
+  margin-bottom: 4rem;
+}
+video {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.fisma {
+  background-color: #e2d2a2;
+}
+
+
+footer .content{
+  display: flex;
+  position:relative;
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+  background-color: #d0a832;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#t {
+  padding-right: 2rem;
 }
