@@ -60,7 +60,7 @@ header .content .logo {
 
 header nav ul {
   display: flex;
-  padding-right: .5rem;
+  padding-right: 1.5rem;
 
 }
 
@@ -312,4 +312,34 @@ main .banner{
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: bold;
+}
+
+/* thesis */
+
+.thesis {
+  background-color: white;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem;
+}
+.thesis h2{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  padding-bottom: 2rem;
+}
+
+.child .mobile {
+  display: none;
+}
+
+.video {
+  flex: 2;
+  flex-flow: column;
+}
+.video-container {
+  flex: 2;
+  border: solid 1px grey;
 }
